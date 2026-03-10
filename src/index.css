@@ -26,7 +26,7 @@
 
   --animate-track-fast: track-fast 30s linear infinite;
   --animate-marquee-ticker-first: marquee-ticker-first 20s linear infinite;
-  --animate-marquee-ticker-second: marquee-ticker-second 20s linear infinite;
+  --animate-marquee-ticker-second: marquee-ticker-second 20s linear infinite 10s;
 
   @keyframes track-fast {
     from {
