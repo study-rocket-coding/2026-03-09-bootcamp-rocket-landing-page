@@ -1,1 +1,92 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Josefin Sans", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary-blue-100: #e5ebff;
+  --color-primary-blue-200: #bfc9f0;
+  --color-primary-blue-300: #a6b6f1;
+  --color-primary-blue-400: #7f94e2;
+  --color-primary-violet-100: #f5f1ff;
+  --color-primary-violet-200: #eee5ff;
+  --color-primary-violet-300: #cab2f1;
+  --color-primary-violet-400: #b28fea;
+  --color-accent-yellow: #ffeea3;
+  --color-accent-orange: #ffd887;
+  --color-neutral-0: #ffffff;
+  --color-neutral-100: #f8f9fd;
+  --color-neutral-200: #f0f0f0;
+  --color-neutral-300: #e0e0e0;
+  --color-neutral-400: #cdcdcd;
+  --color-neutral-500: #9a9a9a;
+  --color-neutral-600: #757575;
+  --color-neutral-700: #363636;
+
+  --background-image-training-pattern: url('./assets/training/training-bg.png');
+  --background-image-hero-banner: url('./assets/banner/banner-bg.png');
+
+  --animate-track-fast: track-fast 30s linear infinite;
+  --animate-marquee-ticker-first: marquee-ticker-first 20s linear infinite;
+  --animate-marquee-ticker-second: marquee-ticker-second 20s linear infinite 10s;
+
+  @keyframes track-fast {
+    from {
+      transform: translateX(20%);
+    }
+    to {
+      transform: translateX(-80%);
+    }
+  }
+
+  @keyframes marquee-ticker-first {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-150%);
+    }
+  }
+
+  @keyframes marquee-ticker-second {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-250%);
+    }
+  }
+  }
+
+  @layer base {
+  body {
+    @apply text-neutral-700 font-sans;
+  }
+
+  h1 {
+    @apply text-5xl font-bold leading-[1.5] tracking-[0.02em] md:text-[32px];
+  }
+
+  h2 {
+    @apply text-4xl font-bold leading-[1.5] tracking-[0.02em] md:text-[28px];
+  }
+
+  h3 {
+    @apply text-[32px] font-bold leading-[1.5] tracking-[0.02em] md:text-2xl;
+  }
+
+  h4 {
+    @apply text-[28px] font-bold leading-[1.5] tracking-[0.02em] md:text-xl;
+  }
+  }
+
+  .body-1 {
+  @apply text-2xl font-bold leading-[1.5] tracking-[0.02em] md:text-xl;
+  }
+
+  .body-2 {
+  @apply text-xl font-bold leading-[1.5] tracking-[0.02em] md:text-[18px];
+  }
+
+  .body-3 {
+  @apply text-base font-medium leading-[1.5] tracking-[0.02em];
+  }
