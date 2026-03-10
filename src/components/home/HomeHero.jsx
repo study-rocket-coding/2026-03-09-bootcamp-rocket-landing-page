@@ -1,5 +1,4 @@
 import React from 'react';
-import bannerBg from '../../assets/banner/banner-bg.png';
 import rocketLogo from '../../assets/banner/banner-logo-rocket-lg.svg';
 import coworkingLogo from '../../assets/banner/banner-logo-coworking-lg.svg';
 import rocketBtnLg from '../../assets/banner/banner-btn-rocket-lg.svg';
@@ -10,16 +9,15 @@ import coworkingBtnSm from '../../assets/banner/banner-btn-coworking-sm.svg';
 const HomeHero = () => {
   return (
     <section 
-      className="relative flex min-h-[757px] w-full flex-col items-center justify-center gap-12 bg-cover bg-center px-12 pt-[124px] pb-[88px] lg:flex-row lg:gap-16 lg:px-0 lg:pt-[92px] lg:pb-[122px]"
-      style={{ backgroundImage: `url(${bannerBg})` }}
+      className="relative flex min-h-0 w-full flex-col items-center justify-center gap-12 bg-hero-banner pt-[124px] px-12 pb-[88px] lg:min-h-[757px] lg:flex-row lg:gap-9 min-[1440px]:gap-16 lg:px-0 lg:pt-[92px] lg:pb-[122px]"
     >
       {/* Rocket Card */}
       <div className="relative w-full max-w-[332px] px-3 lg:max-w-none lg:px-0">
         <a href="/" className="block text-inherit no-underline" aria-label="前往火箭隊">
-          <div className="mx-auto flex h-[132px] w-full max-w-[294px] flex-row items-center justify-start rounded-2xl border-2 border-neutral-300 bg-white p-6 lg:h-[448px] lg:w-[440px] lg:max-w-none lg:flex-col lg:border-neutral-200 lg:p-0 lg:shadow-none">
+          <div className="relative mx-auto flex h-[132px] w-full max-w-[294px] flex-row items-center justify-start rounded-2xl border-2 border-neutral-300 bg-white p-6 lg:h-[448px] lg:w-[440px] lg:max-w-none lg:flex-col lg:border-neutral-200 lg:p-0">
             <hgroup className="z-10 flex flex-col items-start lg:-mt-10 lg:items-center">
-              <h2 className="font-sans text-[32px] font-bold lg:text-[48px]">火箭隊</h2>
-              <p className="mt-1 font-sans text-xl text-neutral-500 lg:mb-4 lg:text-2xl">Bootcamp Rocket</p>
+              <h2 className="font-sans text-[32px] font-bold lg:pl-0 pl-14 lg:text-[48px]">火箭隊</h2>
+              <p className="mt-1 font-sans text-xl text-neutral-500 lg:pl-0 pl-14 lg:mb-4 lg:text-2xl">Bootcamp Rocket</p>
             </hgroup>
             
             <div className="absolute top-[36%] left-6 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full lg:static lg:mb-6 lg:h-[124px] lg:w-[124px] lg:translate-y-0">
@@ -58,10 +56,10 @@ const HomeHero = () => {
       {/* Coworking Card */}
       <div className="relative w-full max-w-[332px] px-3 lg:max-w-none lg:px-0">
         <a href="/coworking-space.html" className="block text-inherit no-underline" aria-label="前往共同空間">
-          <div className="mx-auto flex h-[132px] w-full max-w-[294px] flex-row items-center justify-start rounded-2xl border-2 border-neutral-300 bg-white p-6 lg:h-[448px] lg:w-[440px] lg:max-w-none lg:flex-col lg:border-neutral-200 lg:p-0 lg:shadow-none">
+          <div className="relative mx-auto flex h-[132px] w-full max-w-[294px] flex-row items-center justify-start rounded-2xl border-2 border-neutral-300 bg-white p-6 lg:h-[448px] lg:w-[440px] lg:max-w-none lg:flex-col lg:border-neutral-200 lg:p-0">
             <hgroup className="z-10 flex flex-col items-start lg:-mt-10 lg:items-center">
-              <h2 className="font-sans text-[32px] font-bold lg:text-[48px]">共同空間</h2>
-              <p className="mt-1 font-sans text-xl text-neutral-500 lg:mb-4 lg:text-2xl">Co-working Space</p>
+              <h2 className="font-sans text-[32px] font-bold lg:pl-0 pl-14 lg:text-[48px]">共同空間</h2>
+              <p className="mt-1 font-sans text-xl text-neutral-500 lg:pl-0 pl-14 lg:mb-4 lg:text-2xl">Co-working Space</p>
             </hgroup>
 
             <div className="absolute top-[36%] left-6 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full lg:static lg:mb-6 lg:h-[124px] lg:w-[124px] lg:translate-y-0">
