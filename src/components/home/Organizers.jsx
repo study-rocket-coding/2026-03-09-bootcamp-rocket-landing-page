@@ -10,11 +10,11 @@ import wistron from '../../assets/organizer/organizer-wistron-lg.png';
 const OrganizerCard = ({ img, role, name }) => {
   return (
     <div className="flex shrink-0 flex-col items-start gap-4">
-      <div className="flex h-[120px] w-[156px] items-center justify-center rounded-xl bg-white md:h-[148px] md:w-[196px]">
+      <div className="flex h-[120px] w-[156px] items-center justify-center rounded-2xl bg-white md:h-[148px] md:w-[196px]">
         <img src={img} alt={name} className="max-h-full max-w-full p-4" />
       </div>
-      <p className="text-sm text-neutral-700">
-        <span className="block text-xs text-neutral-500">{role}</span>
+      <p className="text-sm leading-[1.5] text-neutral-700 md:text-base">
+        <span className="block font-bold">{role}</span>
         {name}
       </p>
     </div>
@@ -33,11 +33,11 @@ const Organizers = () => {
   ];
 
   return (
-    <section className="relative w-full bg-neutral-200 py-10 md:py-14">
-      <h3 className="absolute top-[-18px] left-12 bg-neutral-200 px-2 text-xl font-bold md:top-[-24px] md:left-[72px] md:text-2xl">
+    <section className="relative w-full bg-neutral-200">
+      <h3 className="absolute top-[-18px] left-12 z-10 px-2 text-2xl font-bold md:top-[-24px] md:left-[72px] md:text-[32px]">
         主辦、協辦單位
       </h3>
-      <div className="flex gap-6 overflow-x-auto px-12 pb-4 scrollbar-none md:px-[72px]">
+      <div className="flex gap-6 overflow-x-auto pt-9 px-12 pb-4 scrollbar-none md:pt-14 md:px-[72px] md:pb-10">
         {data.map((item, index) => (
           <OrganizerCard key={index} {...item} />
         ))}
