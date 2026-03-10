@@ -154,7 +154,7 @@ const AboutTraining = () => {
 
   return (
     <section className="bg-neutral-100 font-sans">
-      <div className="mx-auto max-w-[1076px] px-6 md:px-0">
+      <div className="mx-auto max-w-[1076px]">
         <hgroup className="flex flex-col items-center">
           <h2 className="-mt-7 text-[32px] font-bold md:text-[36px]">關於培訓</h2>
           <div className="mt-3 mb-12 flex items-center rounded-[50px] bg-white px-5 py-3 shadow-[0_2px_4px_#e8e8e8] lg:px-6">
@@ -176,7 +176,7 @@ const AboutTraining = () => {
           ))}
         </ul>
 
-        <div className="mb-12 md:mb-20">
+        <div className="mb-12 md:mb-20 px-12 md:px-0">
           <h3 className="mb-7 text-[28px] font-bold md:mb-10">教練團</h3>
           
           {/* Desktop Coach Tabs */}
