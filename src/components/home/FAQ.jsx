@@ -7,9 +7,9 @@ import icNo5 from '../../assets/icon/ic-no.5-lg.svg';
 
 const FAQItem = ({ icon, question, answer }) => {
   return (
-    <div className="flex gap-8 border-b-2 border-neutral-200 p-5 md:gap-8 md:p-5 sm:gap-4 sm:p-5 sm:px-0">
-      <div className="shrink-0 pt-1">
-        <img src={icon} alt="no" className="h-6 w-6 md:h-8 md:w-8" />
+    <div className="flex gap-4 border-b-2 border-neutral-200 py-5 px-0 md:gap-8 md:px-5">
+      <div className="shrink-0 pt-1 md:pt-0">
+        <img src={icon} alt="no" className="h-5 w-5 md:h-6 md:w-6" />
       </div>
       <div className="text-base leading-relaxed md:text-lg">
         <p className="font-bold">Q：{question}</p>
@@ -21,10 +21,10 @@ const FAQItem = ({ icon, question, answer }) => {
 
 const FAQ = () => {
   return (
-    <section className="flex flex-col items-center px-12 py-31 md:px-12 md:py-31 sm:px-12 sm:py-12">
+    <section className="flex flex-col items-center px-12 pt-12 pb-[76px] md:py-31">
       <div className="flex w-full max-w-[856px] flex-col gap-15">
         <div className="w-full">
-          <h3 className="border-b-2 border-neutral-200 pb-4 text-2xl font-bold">培訓費用</h3>
+          <h3 className="border-b-2 border-neutral-200 pb-4 text-2xl font-bold md:text-[32px]">培訓費用</h3>
           <FAQItem 
             icon={icNo1} 
             question="請問參加培訓需要費用嗎？" 
