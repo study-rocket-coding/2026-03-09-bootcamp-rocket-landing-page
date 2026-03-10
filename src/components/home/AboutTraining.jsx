@@ -241,7 +241,7 @@ const AboutTraining = () => {
           </ul>
         </div>
 
-        <div className="group relative flex h-20 items-center justify-center rounded-2xl border-2 border-neutral-700 bg-primary-blue-100 transition-all mx-12 translate-y-6 md:mx-auto md:h-24 md:translate-y-0 md:max-w-[1076px]">
+        <div className="group relative flex h-20 items-center justify-center rounded-2xl border-2 border-neutral-700 bg-primary-blue-100 transition-all mx-12 translate-y-6 md:mx-auto md:h-24 md:translate-y-12 md:max-w-[1076px]">
           <a href="https://register.rocket-coding.com/" target="_blank" rel="noreferrer noopener" className="flex w-full items-center justify-center text-center text-inherit no-underline">
             <h3 className="text-2xl font-bold md:text-[32px]">馬上報名！</h3>
             <img src={icGoRocket} alt="go" className="ml-0 h-16 w-16 opacity-0 transition-all duration-500 group-hover:ml-5 group-hover:opacity-100 hidden md:block" />
