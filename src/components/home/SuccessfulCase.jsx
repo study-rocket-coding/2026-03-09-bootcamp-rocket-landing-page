@@ -13,31 +13,31 @@ const SuccessfulCase = () => {
   const row2 = [case5, case6, case7, case8];
 
   return (
-    <section className="flex items-center justify-center px-[72px] pt-[92px] pb-[120px] lg:px-12 lg:pt-12 lg:pb-[92px]">
-      <div className="flex w-full max-w-[1296px] flex-col items-center justify-between gap-7 lg:h-[406px] h-auto">
-        <h2 className="w-full text-center text-[36px] font-bold">成功案例</h2>
+    <section className="successful-case-container flex items-center justify-center bg-white px-0 py-12 min-[1440px]:py-[92px]">
+      <div className="successful-case-box flex w-full max-w-[1296px] flex-col items-center justify-between gap-7">
+        <h2 className="successful-case-box-title w-full text-center text-[32px] font-bold md:text-[36px]">成功案例</h2>
         
-        <div className="w-full overflow-x-auto lg:overflow-visible">
-          <div className="flex w-fit items-center justify-center gap-6 lg:w-full">
+        <div className="successful-case-box-scroll w-full overflow-x-auto overflow-y-hidden scrollbar-none min-[1440px]:overflow-visible">
+          <div className="successful-case-box-4pic flex w-fit items-center justify-start gap-6 px-12 min-[1440px]:w-full min-[1440px]:justify-center min-[1440px]:px-0">
             {row1.map((img, index) => (
               <img 
                 key={index} 
                 src={img} 
                 alt={`case-${index + 1}`} 
-                className="aspect-[306/204] w-full max-w-[306px] lg:aspect-[240/160] lg:w-[240px] lg:min-w-[240px]" 
+                className="h-auto w-[240px] min-w-[240px] aspect-[240/160] min-[1440px]:w-full min-[1440px]:max-w-[306px] min-[1440px]:aspect-[306/204]" 
               />
             ))}
           </div>
         </div>
 
-        <div className="w-full overflow-x-auto lg:overflow-visible">
-          <div className="flex w-fit items-center justify-center gap-6 lg:w-full">
+        <div className="successful-case-box-scroll w-full overflow-x-auto overflow-y-hidden scrollbar-none min-[1440px]:overflow-visible">
+          <div className="successful-case-box-4pic flex w-fit items-center justify-start gap-6 px-6 min-[1440px]:w-full min-[1440px]:justify-center min-[1440px]:gap-7 min-[1440px]:px-0">
             {row2.map((img, index) => (
               <img 
                 key={index} 
                 src={img} 
                 alt={`case-${index + 5}`} 
-                className="aspect-[306/204] w-full max-w-[306px] lg:aspect-[240/160] lg:w-[240px] lg:min-w-[240px]" 
+                className="h-auto w-[240px] min-w-[240px] aspect-[240/160] min-[1440px]:w-full min-[1440px]:max-w-[306px] min-[1440px]:aspect-[306/204]" 
               />
             ))}
           </div>
