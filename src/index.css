@@ -22,6 +22,8 @@
   --color-neutral-600: #757575;
   --color-neutral-700: #363636;
 
+  --background-image-training-pattern: url('./assets/training/training-bg.png');
+
   --animate-track-fast: track-fast 30s linear infinite;
   --animate-marquee-ticker-first: marquee-ticker-first 20s linear infinite;
   --animate-marquee-ticker-second: marquee-ticker-second 20s linear infinite;
