@@ -1,19 +1,26 @@
 import React from 'react';
 
 const HeaderMarquee = () => {
-  const marqueeItems = Array(6).fill(null);
+  const marqueeContent = (
+    <div className="flex items-center gap-6 shrink-0">
+      {Array(6)
+        .fill(null)
+        .map((_, i) => (
+          <div key={i} className="flex items-center gap-5 whitespace-nowrap font-bold">
+            <span>Let&apos;s join</span>
+            <div>- 火箭隊培訓營 Rocket -</div>
+            <div>- 共同空間 Co-working space -</div>
+          </div>
+        ))}
+    </div>
+  );
 
   return (
-    <header className="fixed top-0 z-50 flex h-16 w-full items-center justify-center overflow-hidden bg-white/90 backdrop-blur-md">
-      <div className="flex w-full items-center justify-center overflow-hidden">
-        <div className="animate-track-fast flex shrink-0 items-center justify-start gap-6 will-change-transform">
-          {marqueeItems.map((_, index) => (
-            <div key={index} className="flex shrink-0 items-center justify-center gap-5 whitespace-nowrap font-bold">
-              <span>Let's join</span>
-              <div>- 火箭隊培訓營 Rocket -</div>
-              <div>- 共同空間 Co-working space -</div>
-            </div>
-          ))}
+    <header className="fixed top-0 z-1000 w-full h-16 bg-white/90 backdrop-blur-sm border-b border-neutral-200">
+      <div className="flex items-center overflow-hidden w-full h-full">
+        <div className="flex items-center gap-6 animate-[track-fast_60s_linear_infinite] will-change-transform">
+          {marqueeContent}
+          {marqueeContent}
         </div>
       </div>
     </header>
