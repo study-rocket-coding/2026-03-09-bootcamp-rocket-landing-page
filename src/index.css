@@ -3,6 +3,10 @@
 @theme {
   --font-sans: "Josefin Sans", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
 
+
+  --breakpoint-notebook: 1024px;
+  --breakpoint-desktop: 1440px;
+
   --color-primary-blue-100: #e5ebff;
   --color-primary-blue-200: #bfc9f0;
   --color-primary-blue-300: #a6b6f1;
@@ -22,6 +26,15 @@
   --color-neutral-600: #757575;
   --color-neutral-700: #363636;
 
+  --text-h1: 3rem; /* 48px */
+  --text-h2: 2.25rem; /* 36px */
+  --text-h3: 2rem; /* 32px */
+  --text-h4: 1.75rem; /* 28px */
+  --text-body1: 1.5rem; /* 24px */
+  --text-body2: 1.25rem; /* 20px */
+  --text-body3: 1.125rem; /* 18px */
+  --text-body4: 1rem; /* 16px */
+
   --background-image-training-pattern: url('./assets/training/training-bg.png');
   --background-image-hero-banner: url('./assets/banner/banner-bg.png');
 
@@ -30,63 +43,45 @@
   --animate-marquee-ticker-second: marquee-ticker-second 20s linear infinite 10s;
 
   @keyframes track-fast {
-    from {
-      transform: translateX(20%);
-    }
-    to {
-      transform: translateX(-80%);
-    }
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
   }
+}
 
-  @keyframes marquee-ticker-first {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(-150%);
-    }
-  }
-
-  @keyframes marquee-ticker-second {
-    from {
-      transform: translateX(0%);
-    }
-    to {
-      transform: translateX(-250%);
-    }
-  }
-  }
-
-  @layer base {
+@layer base {
   body {
     @apply text-neutral-700 font-sans;
   }
 
   h1 {
-    @apply text-5xl font-bold leading-[1.5] tracking-[0.02em] md:text-[32px];
+    @apply text-h1 font-bold leading-[1.5] tracking-[0.02em] md:text-[32px];
   }
 
   h2 {
-    @apply text-4xl font-bold leading-[1.5] tracking-[0.02em] md:text-[28px];
+    @apply text-h2 font-bold leading-[1.5] tracking-[0.02em] md:text-[28px];
   }
 
   h3 {
-    @apply text-[32px] font-bold leading-[1.5] tracking-[0.02em] md:text-2xl;
+    @apply text-h3 font-bold leading-[1.5] tracking-[0.02em] md:text-2xl;
   }
 
   h4 {
-    @apply text-[28px] font-bold leading-[1.5] tracking-[0.02em] md:text-xl;
+    @apply text-h4 font-bold leading-[1.5] tracking-[0.02em] md:text-xl;
   }
-  }
+}
 
-  .body-1 {
-  @apply text-2xl font-bold leading-[1.5] tracking-[0.02em] md:text-xl;
-  }
+.body-1 {
+  @apply text-body1 font-bold leading-[1.5] tracking-[0.02em] md:text-xl;
+}
 
-  .body-2 {
-  @apply text-xl font-bold leading-[1.5] tracking-[0.02em] md:text-[18px];
-  }
+.body-2 {
+  @apply text-body2 font-bold leading-[1.5] tracking-[0.02em] md:text-[18px];
+}
 
-  .body-3 {
+.body-3 {
   @apply text-base font-medium leading-[1.5] tracking-[0.02em];
-  }
+}
+
+.body-4 {
+  @apply text-body4 font-normal leading-[1.5] tracking-[0.02em] text-neutral-600;
+}
