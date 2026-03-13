@@ -12,7 +12,7 @@ const FieldAndServiceSection = () => {
 
       {/* #硬體 */}
       <div className="mx-auto max-w-[1076px] mt-[60px] flex flex-col gap-7">
-        <FieldSectionLabel>硬體</FieldSectionLabel>
+        <FieldSectionLabel> 硬體 </FieldSectionLabel>
         <div className="flex flex-col items-center gap-10 notebook:gap-9">
           {fieldItems.map((item, index) => (
             <FieldHardwareRow key={item.id} item={item} index={index} />
@@ -22,7 +22,7 @@ const FieldAndServiceSection = () => {
 
       {/* #服務 */}
       <div className="mx-auto max-w-[1076px] mt-19 notebook:mt-[76px] flex flex-col gap-8 notebook:gap-8 pb-20">
-        <FieldSectionLabel>服務</FieldSectionLabel>
+        <FieldSectionLabel> 服務 </FieldSectionLabel>
         <div className="grid grid-cols-1 md:grid-cols-2 notebook:grid-cols-3 gap-y-7 notebook:gap-y-12 gap-x-7 place-items-center">
           {services.map((s) => (
             <ServiceCard key={s.id} {...s} />
