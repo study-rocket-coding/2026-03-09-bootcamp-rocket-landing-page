@@ -1,4 +1,5 @@
 import React from 'react';
+import MainLayout from '../components/common/MainLayout';
 import HeaderMarquee from '../components/common/HeaderMarquee';
 import HomeHero from '../components/home/HomeHero';
 import AboutRocket from '../components/home/AboutRocket';
@@ -12,14 +13,14 @@ const Home = () => {
   return (
     <div className="flex min-h-screen flex-col">
       <HeaderMarquee />
-      <main className="mt-16 flex-1">
+      <MainLayout>
         <HomeHero />
         <AboutRocket />
         <SuccessfulCase />
         <AboutTraining />
         <FAQ />
         <Organizers />
-      </main>
+      </MainLayout>
       <Footer />
     </div>
   );
