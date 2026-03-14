@@ -6,7 +6,7 @@ import AboutRocket from '../components/home/AboutRocket';
 import SuccessfulCase from '../components/home/SuccessfulCase/SuccessfulCase';
 import AboutTraining from '../components/home/AboutTraining';
 import FAQ from '../components/home/FAQ';
-import Organizers from '../components/home/Organizers';
+import Organizers from '../components/home/Organizers/Organizers';
 import Footer from '../components/common/Footer';
 
 const Home = () => {
