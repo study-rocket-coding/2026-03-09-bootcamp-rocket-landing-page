@@ -2,7 +2,7 @@ import HeaderMarquee from '../components/common/HeaderMarquee';
 import HomeHero from '../components/home/HomeHero';
 import LocationSection from '../components/cooperate/LocationSection/LocationSection';
 import FieldAndServiceSection from '../components/cooperate/FieldAndServiceSection/FieldAndServiceSection';
-import PricingSection from '../components/cooperate/PricingSection';
+import PricingSection from '../components/cooperate/PricingSection/PricingSection';
 import Footer from '../components/common/Footer';
 
 const App = () => {
