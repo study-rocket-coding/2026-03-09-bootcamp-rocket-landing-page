@@ -5,7 +5,7 @@ import HomeHero from '../components/home/HomeHero';
 import AboutRocket from '../components/home/AboutRocket/AboutRocket';
 import SuccessfulCase from '../components/home/SuccessfulCase/SuccessfulCase';
 import AboutTraining from '../components/home/AboutTraining/AboutTraining';
-import FAQ from '../components/home/FAQ';
+import Faq from '../components/home/Faq/Faq';
 import Organizers from '../components/home/Organizers/Organizers';
 import Footer from '../components/common/Footer';
 
@@ -18,7 +18,7 @@ const Home = () => {
         <AboutRocket />
         <SuccessfulCase />
         <AboutTraining />
-        <FAQ />
+        <Faq />
         <Organizers />
       </MainLayout>
       <Footer />
