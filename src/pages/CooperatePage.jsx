@@ -1,5 +1,5 @@
 import HeaderMarquee from '../components/common/HeaderMarquee';
-import HomeHero from '../components/home/HomeHero/HomeHero';
+import HomeHero from '../components/home/HomeHero/index';
 import LocationSection from '../components/cooperate/LocationSection';
 import FieldAndServiceSection from '../components/cooperate/FieldAndServiceSection';
 import PricingSection from '../components/cooperate/PricingSection';

@@ -1,10 +1,10 @@
-const AboutCard = ({ title, enTitle, badges, img }) => {
+const AboutCard = ({ title, badges, src }) => {
   return (
     <li className="font-sans shrink-0 snap-start w-full lg:max-w-[636px] rounded-3xl bg-white px-5 py-4 md:p-9">
       <div className="flex flex-col justify-between sm:flex-row sm:gap-7">
         <div className="flex flex-col justify-between">
           <div>
-            <h3 className="mb-3 text-[32px] font-bold sm:mb-2 md:text-[36px] lg:mb-3">{title}</h3>
+            <h3 className="mb-3 text-[32px] font-bold sm:mb-2 md:text-[36px] lg:mb-3">{title['zh-tw']}</h3>
             <div className="flex flex-wrap gap-3 sm:gap-2 mb-0 sm:mb-3 md:mb-0">
               {badges.map((badge) => (
                 <span 
@@ -16,12 +16,12 @@ const AboutCard = ({ title, enTitle, badges, img }) => {
               ))}
             </div>
           </div>
-          <p className="mt-4 text-2xl font-bold text-neutral-500 sm:text-xl md:text-2xl">{enTitle}</p>
+          <p className="mt-4 text-2xl font-bold text-neutral-500 sm:text-xl md:text-2xl">{title.en}</p>
         </div>
         <div className="relative flex h-[60px] w-full items-center justify-center rounded-xl bg-neutral-100 mt-[136px] sm:mt-0 sm:h-[208px] sm:w-[169px] sm:rounded-3xl sm:justify-start">
           <img
-            src={img}
-            alt={title}
+            src={src}
+            alt={title.en}
             className="h-[160px] -mt-[116px] sm:mt-0 sm:ml-[-51px]"
           />
         </div>
