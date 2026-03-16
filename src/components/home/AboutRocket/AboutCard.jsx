@@ -1,3 +1,6 @@
+import { cn } from "@/lib/utils";
+import { Badge } from "@/components/ui/badge";
+
 const AboutCard = ({ title, badges, src }) => {
   return (
     <div className="shrink-0 snap-start w-full lg:max-w-[636px] rounded-3xl bg-white px-5 py-4 md:p-9">
@@ -7,12 +10,17 @@ const AboutCard = ({ title, badges, src }) => {
             <h3 className="mb-2 text-[24px] font-bold sm:mb-3 sm:text-[32px]">{title['zh-tw']}</h3>
             <div className="flex flex-wrap gap-2 sm:gap-3 sm:mb-3">
               {badges.map((badge) => (
-                <span 
-                  key={badge} 
-                  className="inline-flex w-fit items-center rounded-full border-2 border-primary-blue-300 px-4 py-2 text-xs font-bold text-primary-blue-400 sm:text-base"
+                <Badge
+                  variant="outline"
+                  key={badge}
+                  className={cn(
+                    "rounded-full border-2 border-primary-blue-300 px-4 py-2",
+                    "text-xs font-bold text-primary-blue-400 md:text-base",
+                    "h-auto" // 覆蓋 base 的 h-5
+                  )}
                 >
                   {badge}
-                </span>
+                </Badge>
               ))}
             </div>
           </div>
