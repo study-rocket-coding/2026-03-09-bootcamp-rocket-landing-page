@@ -1,10 +1,12 @@
 import React from 'react';
+import { Card, CardContent } from "@/components/ui/card";
 
 const ServiceCard = ({ icon, title, desc }) => {
     return(
     
-    <div className="w-full max-w-[332px] notebook:max-w-[340px] flex flex-row notebook:flex-col items-start notebook:items-center gap-4 notebook:gap-6">
-        <div className="w-12 h-12 notebook:w-30 notebook:h-30 flex-shrink-0 flex items-center justify-center">
+    <Card className="w-full max-w-[332px] notebook:max-w-[340px] flex flex-row notebook:flex-col items-start notebook:items-center gap-4 notebook:gap-6">
+        <CardContent className="p-0 flex flex-row notebook:flex-col items-start notebook:items-center gap-4 notebook:gap-6">
+          <div className="w-12 h-12 notebook:w-30 notebook:h-30 flex-shrink-0 flex items-center justify-center">
             <img src={icon} alt={title} className="w-full h-full" />
             </div>
             <div className="text-left notebook:text-center">
@@ -12,8 +14,9 @@ const ServiceCard = ({ icon, title, desc }) => {
                 <p className="text-neutral-600 text-[14px] leading-[150%] max-w-none notebook:max-w-[244px] mx-auto">
                     {desc}
                     </p>
-        </div>
-    </div>
+                    </div>
+        </CardContent>
+    </Card>
 );
 };
 
