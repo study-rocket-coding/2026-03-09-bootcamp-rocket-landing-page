@@ -1,21 +1,21 @@
-export const PRICING_HEADER = {
+export const pricingHeader = {
   title: '進駐費用',
   description: '進駐區域共分兩區塊：培訓區域及進駐區域，目前僅接受租期 1 個月以上，單日暫不開放。',
 };
 
-export const PROMO_CONTENT = {
+export const promoContent = {
   year: '2023',
   highlight: '限定優惠價',
   textBefore: '年為試營運階段，進駐可享有',
   textAfter: '!',
 };
 
-export const PRICING_CTA = {
+export const pricingCta = {
   text: '馬上填表單！',
   href: '/something',
 };
 
-export const PRICING_PLANS = [
+export const pricingPlans = [
   {
     title: '進駐者',
     price: '3,200',
