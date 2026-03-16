@@ -1,4 +1,4 @@
-import * as React from "react"
+/* eslint-disable react-refresh/only-export-components */
 
 import { cn } from "@/lib/utils"
 
