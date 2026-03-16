@@ -1,4 +1,3 @@
-import React from 'react';
 import { fieldItems, services, carouselImages } from './data';
 import FieldSectionLabel from './FieldSectionLabel';
 import FieldHardwareRow from './FieldHardwareRow';
