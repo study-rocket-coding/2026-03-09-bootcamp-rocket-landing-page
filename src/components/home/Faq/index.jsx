@@ -1,4 +1,3 @@
-import React from 'react';
 import { feeFaqs, processFaqs } from './data';
 import FaqItem from './FaqItem';
 

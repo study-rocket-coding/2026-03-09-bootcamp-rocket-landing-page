@@ -1,4 +1,3 @@
-import React from 'react';
 import RocketCard from './RocketCard';
 import CoworkingCard from './CoworkingCard';
 
