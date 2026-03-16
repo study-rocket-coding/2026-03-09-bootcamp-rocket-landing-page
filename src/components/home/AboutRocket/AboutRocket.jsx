@@ -1,4 +1,3 @@
-import React from 'react';
 import { rocketData } from './data'
 import AboutCard from './AboutCard';
 

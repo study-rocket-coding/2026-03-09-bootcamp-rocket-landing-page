@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import icGoRocket from '@/assets/icon/ic-go-rocket.svg';
 import { trainings, coaches } from './data';
 import DetailCard from './DetailCard';

@@ -1,4 +1,3 @@
-import React from 'react';
 import MainLayout from '../components/common/MainLayout';
 import HeaderMarquee from '../components/common/HeaderMarquee';
 import HomeHero from '../components/home/HomeHero/HomeHero';
