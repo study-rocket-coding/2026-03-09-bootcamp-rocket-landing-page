@@ -4,21 +4,27 @@ import uiImg from '@/assets/group/about-rocket-ui.svg';
 
 export const rocketData = [
   {
-    title: '前端工程師',
-    enTitle: 'Front-end engineer',
+    title: {
+      'zh-tw': '前端工程師',
+      en: 'Front-end engineer',
+    },
     badges: ['HTML', 'CSS', 'JavaScript'],
-    img: frontendImg,
+    src: frontendImg,
   },
   {
-    title: '後端工程師',
-    enTitle: 'Back-end engineer',
+    title: {
+      'zh-tw': '後端工程師',
+      en: 'Back-end engineer',
+    },
     badges: ['C#', '.Net'],
-    img: backendImg,
+    src: backendImg,
   },
   {
-    title: 'UI 設計師',
-    enTitle: 'UI designer',
+    title: {
+      'zh-tw': 'UI 設計師',
+      en: 'UI designer',
+    },
     badges: ['Figma', 'HTML', 'CSS'],
-    img: uiImg,
+    src: uiImg,
   },
 ];

@@ -5,18 +5,21 @@ import icNo4 from '@/assets/icon/ic-no.4-lg.svg';
 import icNo5 from '@/assets/icon/ic-no.5-lg.svg';
 
 export const feeFaqs = [
-  { icon: icNo1,
-    alt: icNo1,
+  { 
+    src: icNo1,
+    alt: '第一個問題',
     question: '請問參加培訓需要費用嗎？',
     answer: '不會有任何費用，僅需要場地費 ( $1,200 / Month )，其餘完全免費。'
   },
-  { icon: icNo2,
-    alt: icNo2,
+  { 
+    src: icNo2,
+    alt: '第二個問題',
     question: '你們不是直銷吧？',
     answer: '不是，不會推銷任何東西。'
   },
-  { icon: icNo3,
-    alt: icNo3,
+  { 
+    src: icNo3,
+    alt: '第三個問題',
     question: '你們真的不是詐騙集團？台灣有其他單位做一樣的事了嗎？',
     answer: (
       <>
@@ -31,18 +34,21 @@ export const feeFaqs = [
 ];
 
 export const processFaqs = [
-  { icon: icNo1,
-    alt: icNo1,
+  { 
+    src: icNo1,
+    alt: '第一個問題',
     question: '那培訓的時間是多久呢？',
     answer: '培訓時間為七個月，您可以選擇要投入前端工程師、後端工程師或 UI 設計師。'
   },
-  { icon: icNo2,
-    alt: icNo2,
+  { 
+    src: icNo2,
+    alt: '第二個問題',
     question: '那如果七個月後，可以續留嗎？',
     answer: '當然可以，我們提供額外的進駐空間供您使用。在這裡，您可以與其他火箭隊夥伴保持緊密交流，分享心得，或者利用此空間接案和進行遠端工作，讓您的技能不斷精進。'
   },
-  { icon: icNo3,
-    alt: icNo3,
+  { 
+    src: icNo3,
+    alt: '第三個問題',
     question: '你們和其他的培訓單位有什麼差異呢？',
     answer: (
       <>
@@ -52,8 +58,9 @@ export const processFaqs = [
       </>
     )
   },
-  { icon: icNo4,
-    alt: icNo4,
+  { 
+    src: icNo4,
+    alt: '第四個問題',
     question: '這麼說來，你們沒有一個完整課綱？',
     answer: (
       <>
@@ -62,8 +69,9 @@ export const processFaqs = [
       </>
     )
   },
-  { icon: icNo5,
-    alt: icNo5,
+  { 
+    src: icNo5,
+    alt: '第五個問題',
     question: '所以有很多的時間都是在自我研究技術？',
     answer: '是的，沒有錯，教練的存在是觀察您目前的狀態，並與您共同建立各階段性的目標，確保您方向沒有走歪，能順遂朝自己的方向邁進。'
   },
