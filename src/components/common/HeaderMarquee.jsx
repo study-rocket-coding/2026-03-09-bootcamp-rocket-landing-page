@@ -1,5 +1,3 @@
-import React from 'react';
-
 const HeaderMarquee = () => {
   const marqueeContent = (
     <div className="flex items-center gap-6 shrink-0">

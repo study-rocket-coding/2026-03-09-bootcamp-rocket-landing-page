@@ -1,4 +1,3 @@
-import React from 'react';
 import { locationData } from './data';
 
 const LocationMap = ({ className = "" }) => {

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const LocationInfo = ({ eyebrow, title, description, className = "" }) => {
   return (
     <div className={`location-info w-full notebook:max-w-[500px] flex flex-col ${className}`}>

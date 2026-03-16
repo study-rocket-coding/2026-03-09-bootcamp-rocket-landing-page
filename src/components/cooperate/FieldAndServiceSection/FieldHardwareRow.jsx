@@ -1,5 +1,3 @@
-import React from 'react';
-
 const FieldHardwareRow = ({ item, index }) => {
   const isReverse = index % 2 === 1;
 
