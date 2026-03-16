@@ -1,11 +1,11 @@
 import MainLayout from '../components/common/MainLayout';
 import HeaderMarquee from '../components/common/HeaderMarquee';
-import HomeHero from '../components/home/HomeHero/HomeHero';
-import AboutRocket from '../components/home/AboutRocket/AboutRocket';
-import SuccessfulCase from '../components/home/SuccessfulCase/SuccessfulCase';
-import AboutTraining from '../components/home/AboutTraining/AboutTraining';
-import Faq from '../components/home/Faq/Faq';
-import Organizers from '../components/home/Organizers/Organizers';
+import HomeHero from '../components/home/HomeHero/index';
+import AboutRocket from '../components/home/AboutRocket/index';
+import SuccessfulCase from '../components/home/SuccessfulCase/index';
+import AboutTraining from '../components/home/AboutTraining/index';
+import Faq from '../components/home/Faq/index';
+import Organizers from '../components/home/Organizers/index';
 import Footer from '../components/common/Footer';
 
 const Home = () => {
