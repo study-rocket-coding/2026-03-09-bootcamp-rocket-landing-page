@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import rocketLogo from '@/assets/banner/banner-logo-rocket-lg.svg';
 import RocketBadgeDesktop from './RocketBadgeDesktop';
 import RocketBadgeMobile from './RocketBadgeMobile';
@@ -5,7 +6,7 @@ import RocketBadgeMobile from './RocketBadgeMobile';
 const RocketCard = () => {
   return (
     <div className="relative w-full max-w-[332px] px-3 lg:max-w-none lg:px-0">
-      <a href="/" className="block text-inherit no-underline" aria-label="前往火箭隊">
+      <Link to="/" className="block text-inherit no-underline" aria-label="前往火箭隊">
         <div className="relative mx-auto flex h-[132px] w-full max-w-[294px] flex-row items-center justify-start rounded-2xl border-2 border-neutral-300 bg-white p-6 lg:h-[448px] lg:w-[440px] lg:max-w-none lg:flex-col lg:border-neutral-200 lg:p-0">
           <hgroup className="z-10 flex flex-col items-start lg:-mt-10 lg:items-center">
             <h2 className="text-[32px] font-bold lg:pl-0 pl-14 lg:text-[48px]">火箭隊</h2>
@@ -26,7 +27,7 @@ const RocketCard = () => {
 
           <RocketBadgeMobile />
         </div>
-      </a>
+      </Link>
     </div>
   )
 }
