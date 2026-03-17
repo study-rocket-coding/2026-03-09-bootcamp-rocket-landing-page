@@ -10,7 +10,7 @@ const AboutTraining = () => {
   const [activeCoach, setActiveCoach] = useState('weijie');
 
   return (
-    <section className="bg-neutral-100 font-sans">
+    <section className="bg-neutral-100">
       <div className="mx-auto max-w-[1076px]">
         <hgroup className="flex flex-col items-center">
           <h2 className="-mt-7 text-[32px] font-bold md:text-[36px]">關於培訓</h2>

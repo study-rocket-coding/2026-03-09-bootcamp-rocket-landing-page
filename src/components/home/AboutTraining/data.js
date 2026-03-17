@@ -95,7 +95,8 @@ export const coaches = [
       '國泰產險教育訓練講師'
     ]
   },
-  { id: 'justin',
+  { 
+    id: 'justin',
     name: '賈 斯 汀',
     title: '後端教練 | 賈斯汀',
     src: coachJustin,
@@ -111,7 +112,8 @@ export const coaches = [
       '高雄世運志工服務系統'
     ]
   },
-  { id: 'casper',
+  { 
+    id: 'casper',
     name: '卡 斯 伯',
     title: 'UI 教練 | 卡斯伯',
     src: coachCasper,
