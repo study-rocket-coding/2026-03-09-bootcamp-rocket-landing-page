@@ -1,5 +1,3 @@
-import { cn } from "@/lib/utils";
-
 const ServiceCard = ({ icon, title, desc }) => {
     return (
         <div className="w-full max-w-[332px] notebook:max-w-[340px] flex flex-row notebook:flex-col items-start notebook:items-center gap-4 notebook:gap-6">
