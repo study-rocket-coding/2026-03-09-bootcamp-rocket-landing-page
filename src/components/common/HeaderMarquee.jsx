@@ -3,8 +3,8 @@ const HeaderMarquee = () => {
     <div className="flex items-center gap-6 shrink-0">
       {Array(6)
         .fill(null)
-        .map((_, i) => (
-          <div key={i} className="flex items-center gap-5 whitespace-nowrap font-bold">
+        .map((_, marqueeInfo) => (
+          <div key={marqueeInfo} className="flex items-center gap-5 whitespace-nowrap font-bold">
             <span>Let&apos;s join</span>
             <div>- 火箭隊培訓營 Rocket -</div>
             <div>- 共同空間 Co-working space -</div>
