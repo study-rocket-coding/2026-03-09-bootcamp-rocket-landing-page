@@ -1,6 +1,8 @@
+import { cn } from "@/lib/utils";
+
 const LocationInfo = ({ eyebrow, title, description, className = "" }) => {
   return (
-    <div className={`location-info w-full notebook:max-w-[500px] flex flex-col ${className}`}>
+    <div className={cn("location-info w-full notebook:max-w-[500px] flex flex-col", className)}>
       <span className="location-eyebrow text-[14px] notebook:text-[20px] leading-[150%] tracking-[0.02em] font-bold text-neutral-700 mb-2 notebook:mb-5">
         {eyebrow}
       </span>
