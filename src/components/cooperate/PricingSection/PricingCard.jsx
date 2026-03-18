@@ -3,9 +3,6 @@ import { cn } from "@/lib/utils";
 import checkIcon from "@/assets/icon/ic-check-sm.svg";
 
 const PricingCard = ({ title, price, unit, features, isHighlighted = false }) => {
-  const dynamicBorderClassName = isHighlighted 
-    ? "border-2 border-neutral-700 shadow-none" 
-    : "border-none shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06)]";
 
   return (
     <Card
