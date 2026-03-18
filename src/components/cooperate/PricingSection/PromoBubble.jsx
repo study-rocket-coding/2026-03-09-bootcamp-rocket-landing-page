@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import { promoContent } from './data';
 
 const PromoBubble = () => {

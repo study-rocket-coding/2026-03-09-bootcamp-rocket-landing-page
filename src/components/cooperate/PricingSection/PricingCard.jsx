@@ -3,12 +3,14 @@ import { cn } from "@/lib/utils";
 import checkIcon from "@/assets/icon/ic-check-sm.svg";
 
 const PricingCard = ({ title, price, unit, features, isHighlighted = false }) => {
-
+  const dynamicBorderClassName = isHighlighted 
+    ? "border-2 border-neutral-700 shadow-none" 
+    : "border-none shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06)]";
   return (
     <Card
       className={cn(
         "bg-white rounded-2xl p-4 notebook:px-20 notebook:py-12 flex flex-col w-full min-w-[calc(100vw-96px)] shrink-0 notebook:min-w-0 scroll-snap-start border-none shadow-none ring-0",
-        isHighlighted ? "border-2 border-neutral-700" : "shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06)]"
+        dynamicBorderClassName
       )}
     >
       <CardHeader className="p-0 mb-6">
