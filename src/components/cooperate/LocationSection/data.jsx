@@ -1,4 +1,3 @@
-import React from 'react';
 import mapLg from '../../../assets/map/map-lg.png';
 import mapSm from '../../../assets/map/map-sm.png';
 

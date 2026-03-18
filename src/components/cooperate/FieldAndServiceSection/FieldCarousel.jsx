@@ -1,4 +1,3 @@
-import React from 'react';
 import CarouselList from '../FieldAndServiceSection/CarouselList';
 
 const FieldCarousel = ({ images }) => {
