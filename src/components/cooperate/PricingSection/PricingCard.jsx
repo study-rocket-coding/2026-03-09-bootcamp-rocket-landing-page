@@ -14,19 +14,18 @@ const PricingCard = ({ title, price, unit, features, isHighlighted = false }) =>
     "card-price bg-neutral-200 py-7 px-6 flex items-baseline justify-center gap-2 mb-6";
 
   const listClassName = "card-list flex flex-col gap-4 items-start";
-
   return (
     <Card className={cardClassName}>
       <CardHeader className="p-0 mb-6">
         <CardTitle className="text-center text-h4 font-bold p-0">{title}</CardTitle>
       </CardHeader>
-
+      
       <CardContent className="p-0">
         <div className={priceBlockClassName}>
           <span className="amount font-main font-bold text-body1 notebook:text-h4">$ {price}</span>
           <span className="unit text-body2">/ {unit}</span>
         </div>
-
+        
         <ul className={listClassName}>
           {features.map((feature) => {
             const featureTextClassName = feature.isOriginalPrice
