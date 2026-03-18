@@ -3,8 +3,8 @@ import mapLg from '../../../assets/map/map-lg.png';
 import mapSm from '../../../assets/map/map-sm.png';
 
 export const locationData = {
-  eyebrow: "About us",
-  title: "共同空間簡介",
+  eyebrow: 'About us',
+  title: '共同空間簡介',
   description: (
     <>
       共同空間有近 100 坪的空間，在開放式的公共區域中有
@@ -16,6 +16,6 @@ export const locationData = {
   images: {
     lg: mapLg,
     sm: mapSm,
-    alt: "火箭共同空間地理位置圖"
-  }
+    alt: '火箭共同空間地理位置圖',
+  },
 };

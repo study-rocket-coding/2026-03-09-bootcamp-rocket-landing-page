@@ -6,13 +6,13 @@ import FieldCarousel from './FieldCarousel';
 
 const FieldAndServiceSection = () => {
   return (
-    <section className="field-and-service-container py-20 notebook:px-0 px-12">
-      <h2 className="text-[28px] notebook:text-[36px] font-bold text-center mb-15">場域說明</h2>
+    <section className="field-and-service-container notebook:px-0 px-12 py-20">
+      <h2 className="notebook:text-[36px] mb-15 text-center text-[28px] font-bold">場域說明</h2>
 
       {/* #硬體 */}
-      <div className="mx-auto max-w-[1076px] mt-[60px] flex flex-col gap-7">
+      <div className="mx-auto mt-[60px] flex max-w-[1076px] flex-col gap-7">
         <FieldSectionLabel> 硬體 </FieldSectionLabel>
-        <div className="flex flex-col items-center gap-10 notebook:gap-9">
+        <div className="notebook:gap-9 flex flex-col items-center gap-10">
           {fieldItems.map((item, index) => (
             <FieldHardwareRow key={item.id} item={item} index={index} />
           ))}
@@ -20,9 +20,9 @@ const FieldAndServiceSection = () => {
       </div>
 
       {/* #服務 */}
-      <div className="mx-auto max-w-[1076px] mt-19 notebook:mt-[76px] flex flex-col gap-8 notebook:gap-8 pb-20">
+      <div className="notebook:mt-[76px] notebook:gap-8 mx-auto mt-19 flex max-w-[1076px] flex-col gap-8 pb-20">
         <FieldSectionLabel> 服務 </FieldSectionLabel>
-        <div className="grid grid-cols-1 md:grid-cols-2 notebook:grid-cols-3 gap-y-7 notebook:gap-y-12 gap-x-7 place-items-center">
+        <div className="notebook:grid-cols-3 notebook:gap-y-12 grid grid-cols-1 place-items-center gap-x-7 gap-y-7 md:grid-cols-2">
           {services.map((s) => (
             <ServiceCard key={s.id} {...s} />
           ))}

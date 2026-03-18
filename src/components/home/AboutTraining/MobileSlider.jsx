@@ -2,7 +2,7 @@ import { coaches } from './data';
 
 const MobileSlider = () => {
   return (
-    <ul className="flex snap-x snap-mandatory gap-7 overflow-x-auto pt-6 pb-6 md:hidden scrollbar-none">
+    <ul className="scrollbar-none flex snap-x snap-mandatory gap-7 overflow-x-auto pt-6 pb-6 md:hidden">
       {coaches.map((coach) => (
         <li key={coach.id} className="min-w-[calc(100vw-98px)] snap-start">
           <div className="relative mb-8 block h-[200px] w-full rounded-xl border-2 border-neutral-700 bg-white p-4">
@@ -24,8 +24,7 @@ const MobileSlider = () => {
         </li>
       ))}
     </ul>
-  )
-}
-
+  );
+};
 
 export default MobileSlider;
