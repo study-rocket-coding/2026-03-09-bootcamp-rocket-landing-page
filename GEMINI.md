@@ -13,7 +13,6 @@
 - **組合邏輯**：在 `Home.jsx` 中引用並組合這些首頁專用元件。
 
 > ⚠️ Phase 2 將導入 Shadcn UI 取代現有 UI 元素，Phase 3 將導入 React Router 實作多頁面路由，開發時請避免過度依賴自定義結構。
-> 
 
 ---
 
@@ -35,6 +34,7 @@
 - 樣式來源：請優先解析 `legacy-reference/styles/main.css` 中的最終數值（如 Hex 色碼、px 間距），並轉換為對應的 Tailwind 類別。
 - 嚴禁自定義樣式：禁止在 React 元件中寫死 CSS 或 Inline Styles。
 - 主題擴充：若需定義專屬顏色或變數，請告知我修改 `src/index.css` 的 `@theme` 區塊。
+
 ### 元件規範
 
 - 每個元件必須使用 `export default`。
@@ -48,7 +48,7 @@
 - 統一使用 `import` 方式引入圖片（配合 `vite.config.js` 的 `base` 設定）：
 
 ```jsx
-  import logo from '../assets/images/logo.png';
+import logo from '../assets/images/logo.png';
 ```
 
 - 舊專案 `legacy-reference/assets/` 的圖片，現在皆位於 `src/assets/`。
@@ -57,11 +57,11 @@
 
 ## 📁 參考與產出路徑
 
-| 類型 | 參考來源 | 產出目標 |
-| --- | --- | --- |
-| 首頁 | `legacy-reference/index.html` | `src/pages/Home.jsx` |
-| 首頁專用元件 | legacy-reference 視覺邏輯 | `src/components/home/`（如 `HomeHero.jsx`、`About.jsx`） |
-| 共用元件 | 跨頁出現的區塊 | `src/components/common/`（如 `Navbar.jsx`、`Footer.jsx`） |
+| 類型         | 參考來源                      | 產出目標                                                  |
+| ------------ | ----------------------------- | --------------------------------------------------------- |
+| 首頁         | `legacy-reference/index.html` | `src/pages/Home.jsx`                                      |
+| 首頁專用元件 | legacy-reference 視覺邏輯     | `src/components/home/`（如 `HomeHero.jsx`、`About.jsx`）  |
+| 共用元件     | 跨頁出現的區塊                | `src/components/common/`（如 `Navbar.jsx`、`Footer.jsx`） |
 
 ---
 
