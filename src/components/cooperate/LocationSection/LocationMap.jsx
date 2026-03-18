@@ -1,4 +1,4 @@
-import { cn } from '@/lib/utils';
+import { cn } from "@/lib/utils";
 import { locationData } from './data';
 
 const LocationMap = ({ locationContainer = "" }) => {
@@ -16,7 +16,7 @@ const LocationMap = ({ locationContainer = "" }) => {
                 />  
         </picture>
     </div>
-  );
-};
+    )
+}
 
 export default LocationMap;
