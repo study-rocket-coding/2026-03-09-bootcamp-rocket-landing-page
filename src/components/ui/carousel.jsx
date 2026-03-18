@@ -1,4 +1,3 @@
-"use client";
 /* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
@@ -20,13 +19,11 @@ function useCarousel() {
 }
 
 function Carousel({ orientation = "horizontal", opts, setApi, plugins, className, children, ...props }) {
-  const [carouselRef, api] = useEmblaCarousel(
-    {
-      ...opts,
-      axis: orientation === "horizontal" ? "x" : "y",
-    },
-    plugins
-  );
+  const emblaOptions = {
+    ...opts,
+    axis: orientation === "horizontal" ? "x" : "y",
+  };
+  const [carouselRef, api] = useEmblaCarousel(emblaOptions, plugins);
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(false);
 
@@ -103,21 +100,13 @@ function Carousel({ orientation = "horizontal", opts, setApi, plugins, className
   );
 }
 
-function CarouselContent({
-  className,
-  ...props
-}) {
-  const { carouselRef, orientation } = useCarousel()
+function CarouselContent({ className, ...props }) {
+  const { carouselRef, orientation } = useCarousel();
+  const orientationClasses = orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col";
 
   return (
     <div ref={carouselRef} className="overflow-hidden">
-      <div
-        className={cn(
-          "flex",
-          orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
-          className
-        )}
-        {...props} />
+      <div className={cn("flex", orientationClasses, className)} {...props} />
     </div>
   );
 }
@@ -128,13 +117,15 @@ function CarouselItem({
 }) {
   const { orientation } = useCarousel()
 
+  const orientationClasses = orientation === "horizontal" ? "pl-4" : "pt-4";
+
   return (
     <div
       role="group"
       aria-roledescription="slide"
       className={cn(
         "min-w-0 shrink-0 grow-0 basis-full",
-        orientation === "horizontal" ? "pl-4" : "pt-4",
+        orientationClasses,
         className
       )}
       {...props} />
@@ -173,19 +164,24 @@ function CarouselNext({
   className,
   variant = "outline",
   size = "icon",
-  ...props
-}) {
-  const { orientation, scrollNext, canScrollNext } = useCarousel()
+  ...props}) 
+  {
+  
+  const { orientation, scrollNext, canScrollNext } = useCarousel();
+  
+  const orientationClasses = orientation === "horizontal"
+          ? "-right-12 top-1/2 -translate-y-1/2"
+          : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90"
 
   return (
     <Button
       variant={variant}
       size={size}
+      
+
       className={cn(
         "absolute h-8 w-8 rounded-full",
-        orientation === "horizontal"
-          ? "-right-12 top-1/2 -translate-y-1/2"
-          : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
+        orientationClasses,
         className
       )}
       disabled={!canScrollNext}
