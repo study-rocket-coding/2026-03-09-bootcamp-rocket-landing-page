@@ -1,6 +1,6 @@
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
-import checkIcon from "@/assets/icon/ic-check-sm.svg";
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
+import checkIcon from '@/assets/icon/ic-check-sm.svg';
 
 const PricingCard = ({ title, price, unit, features, isHighlighted = false }) => {
   const cardClassName = cn(
