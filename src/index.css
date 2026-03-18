@@ -5,97 +5,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@theme {
-  --font-sans: "Josefin Sans", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
-
-  --breakpoint-notebook: 1024px;
-  --breakpoint-desktop: 1440px;
-
-  --color-primary-blue-100: #e5ebff;
-  --color-primary-blue-200: #bfc9f0;
-  --color-primary-blue-300: #a6b6f1;
-  --color-primary-blue-400: #7f94e2;
-  --color-primary-violet-100: #f5f1ff;
-  --color-primary-violet-200: #eee5ff;
-  --color-primary-violet-300: #cab2f1;
-  --color-primary-violet-400: #b28fea;
-  --color-accent-yellow: #ffeea3;
-  --color-accent-orange: #ffd887;
-  --color-neutral-0: #ffffff;
-  --color-neutral-100: #f8f9fd;
-  --color-neutral-200: #f0f0f0;
-  --color-neutral-300: #e0e0e0;
-  --color-neutral-400: #cdcdcd;
-  --color-neutral-500: #9a9a9a;
-  --color-neutral-600: #757575;
-  --color-neutral-700: #363636;
-
-  --text-h1: 3rem; /* 48px */
-  --text-h2: 2.25rem; /* 36px */
-  --text-h3: 2rem; /* 32px */
-  --text-h4: 1.75rem; /* 28px */
-  --text-body1: 1.5rem; /* 24px */
-  --text-body2: 1.25rem; /* 20px */
-  --text-body3: 1.125rem; /* 18px */
-  --text-body4: 1rem; /* 16px */
-
-  --background-image-training-pattern: url('./assets/training/training-bg.png');
-  --background-image-hero-banner: url('./assets/banner/banner-bg.png');
-
-  --animate-track-fast: track-fast 30s linear infinite;
-  --animate-marquee-ticker-first: marquee-ticker-first 20s linear infinite;
-  --animate-marquee-ticker-second: marquee-ticker-second 20s linear infinite 10s;
-
-  @keyframes track-fast {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-  }
-}
-
-@layer base {
-  body {
-    @apply font-sans bg-background text-foreground;
-  }
-
-  h1 {
-    @apply text-h1 font-bold leading-[1.5] tracking-[0.02em] md:text-[32px];
-  }
-
-  h2 {
-    @apply text-h2 font-bold leading-[1.5] tracking-[0.02em] md:text-[28px];
-  }
-
-  h3 {
-    @apply text-h3 font-bold leading-[1.5] tracking-[0.02em] md:text-2xl;
-  }
-
-  h4 {
-    @apply text-h4 font-bold leading-[1.5] tracking-[0.02em] md:text-xl;
-  }
-  * {
-    @apply border-border outline-ring/50;
-  }
-  html {
-    @apply font-sans;
-  }
-}
-
-.body-1 {
-  @apply text-body1 font-bold leading-[1.5] tracking-[0.02em] md:text-xl;
-}
-
-.body-2 {
-  @apply text-body2 font-bold leading-[1.5] tracking-[0.02em] md:text-[18px];
-}
-
-.body-3 {
-  @apply text-base font-medium leading-[1.5] tracking-[0.02em];
-}
-
-.body-4 {
-  @apply text-body4 font-normal leading-[1.5] tracking-[0.02em] text-neutral-600;
-}
-
+/* Shadcn UI 自動生成的 token */
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -205,4 +115,97 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* 客製化 token/字體/顏色 */
+/* 覆蓋 Shadcn UI token，確保生效 */
+@theme {
+  --font-sans: "Josefin Sans", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+
+  --breakpoint-notebook: 1024px;
+  --breakpoint-desktop: 1440px;
+
+  --color-primary-blue-100: #e5ebff;
+  --color-primary-blue-200: #bfc9f0;
+  --color-primary-blue-300: #a6b6f1;
+  --color-primary-blue-400: #7f94e2;
+  --color-primary-violet-100: #f5f1ff;
+  --color-primary-violet-200: #eee5ff;
+  --color-primary-violet-300: #cab2f1;
+  --color-primary-violet-400: #b28fea;
+  --color-accent-yellow: #ffeea3;
+  --color-accent-orange: #ffd887;
+  --color-neutral-0: #ffffff;
+  --color-neutral-100: #f8f9fd;
+  --color-neutral-200: #f0f0f0;
+  --color-neutral-300: #e0e0e0;
+  --color-neutral-400: #cdcdcd;
+  --color-neutral-500: #9a9a9a;
+  --color-neutral-600: #757575;
+  --color-neutral-700: #363636;
+
+  --text-h1: 3rem; /* 48px */
+  --text-h2: 2.25rem; /* 36px */
+  --text-h3: 2rem; /* 32px */
+  --text-h4: 1.75rem; /* 28px */
+  --text-body1: 1.5rem; /* 24px */
+  --text-body2: 1.25rem; /* 20px */
+  --text-body3: 1.125rem; /* 18px */
+  --text-body4: 1rem; /* 16px */
+
+  --background-image-training-pattern: url('./assets/training/training-bg.png');
+  --background-image-hero-banner: url('./assets/banner/banner-bg.png');
+
+  --animate-track-fast: track-fast 30s linear infinite;
+  --animate-marquee-ticker-first: marquee-ticker-first 20s linear infinite;
+  --animate-marquee-ticker-second: marquee-ticker-second 20s linear infinite 10s;
+
+  @keyframes track-fast {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-background text-foreground;
+  }
+
+  h1 {
+    @apply text-h1 font-bold leading-[1.5] tracking-[0.02em] md:text-[32px];
+  }
+
+  h2 {
+    @apply text-h2 font-bold leading-[1.5] tracking-[0.02em] md:text-[28px];
+  }
+
+  h3 {
+    @apply text-h3 font-bold leading-[1.5] tracking-[0.02em] md:text-2xl;
+  }
+
+  h4 {
+    @apply text-h4 font-bold leading-[1.5] tracking-[0.02em] md:text-xl;
+  }
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+.body-1 {
+  @apply text-body1 font-bold leading-[1.5] tracking-[0.02em] md:text-xl;
+}
+
+.body-2 {
+  @apply text-body2 font-bold leading-[1.5] tracking-[0.02em] md:text-[18px];
+}
+
+.body-3 {
+  @apply text-base font-medium leading-[1.5] tracking-[0.02em];
+}
+
+.body-4 {
+  @apply text-body4 font-normal leading-[1.5] tracking-[0.02em] text-neutral-600;
 }
