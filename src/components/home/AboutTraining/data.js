@@ -22,7 +22,7 @@ export const trainings = [
     },
     learn: {
       title: '你會學到',
-      items: [
+      skills: [
         '網頁切版技能：HTML5、CSS3、SCSS、Bootsrap5、TailwindCSS',
         '前端開發技能：JavaScript、TypeScript、ES6、SPA、JS plugin 整合、API 介接、NPM',
         '後端開發技能：Node.js、MongoDB、heroku、express、JWT',
@@ -30,7 +30,7 @@ export const trainings = [
         '程式版控：Git、GitHub、Git Flow 工作流程'
       ]
     },
-    img: frontendTrainingImg,
+    src: frontendTrainingImg,
     isReverse: false
   },
   {
@@ -41,13 +41,13 @@ export const trainings = [
     },
     learn: {
       title: '你會學到',
-      items: [
+      skills: [
         '後端語言：C#',
         '程式架構：ASP.NET Web Form、ASP.NET MVC、Web API',
         '資料庫與雲端主機：MSSQL、Microsoft Azure'
       ]
     },
-    img: backendTrainingImg,
+    src: backendTrainingImg,
     isReverse: true
   },
   {
@@ -58,13 +58,13 @@ export const trainings = [
     },
     learn: {
       title: '你會學到',
-      items: [
+      skills: [
         '網頁前置規劃：Logic Flow、Wireframe、網格系統、使用者體驗',
         '介面繪製流程：Figma 操作、Mockup、Prototype、標註文件',
         '網頁切版技能：HTML5、CSS、Bootstrap5'
       ]
     },
-    img: uiTrainingImg,
+    src: uiTrainingImg,
     isReverse: false
   }
 ];
@@ -74,7 +74,7 @@ export const coaches = [
     id: 'weijie',
     name: '廖 洧 杰',
     title: '前端教練 | 廖洧杰',
-    img: coachWeijie,
+    src: coachWeijie,
     experiences: [
       '2016-2022 過往經歷：六角學院校長、高雄火箭隊前端教練',
       '2013-2019 成功案例：協助無資訊背景轉職工程師人數超過 500 位',
@@ -87,7 +87,7 @@ export const coaches = [
     id: 'yinmin',
     name: '穎 旻',
     title: '前端教練 | 穎旻',
-    img: coachYinmin,
+    src: coachYinmin,
     experiences: [
       '六角學院前端工程師',
       '六角學院前端講師',
@@ -95,10 +95,11 @@ export const coaches = [
       '國泰產險教育訓練講師'
     ]
   },
-  { id: 'justin',
+  { 
+    id: 'justin',
     name: '賈 斯 汀',
     title: '後端教練 | 賈斯汀',
-    img: coachJustin,
+    src: coachJustin,
     experiences: [
       '總統府全球資訊網系統維護及開發',
       '總統府 APP 新聞即時通系統開發',
@@ -111,10 +112,11 @@ export const coaches = [
       '高雄世運志工服務系統'
     ]
   },
-  { id: 'casper',
+  { 
+    id: 'casper',
     name: '卡 斯 伯',
     title: 'UI 教練 | 卡斯伯',
-    img: coachCasper,
+    src: coachCasper,
     experiences: [
       '2016-2022 過往經歷：六角學院共同創辦人',
       '2016-2022 近期授課經驗：Vue 3 直播班講師',

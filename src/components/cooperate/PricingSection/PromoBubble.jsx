@@ -1,7 +1,8 @@
-import { PROMO_CONTENT } from './data';
+import { Badge } from "@/components/ui/badge";
+import { promoContent } from './data';
 
 const PromoBubble = () => {
-  const { year, highlight, textBefore, textAfter } = PROMO_CONTENT;
+  const { year, highlight, textBefore, textAfter } = promoContent;
 
   return (
     <div className="promo-bubble-wrap relative notebook:absolute notebook:-top-3.75 notebook:left-15 mb-4 notebook:mb-0">

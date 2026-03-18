@@ -1,17 +1,29 @@
-import React from 'react';
-
 const HeaderMarquee = () => {
+  const marqueeData = {
+    a: "Let&apos;s join" , 
+    b:"- 火箭隊培訓營 Rocket -",
+    c: "- 共同空間 Co-working space -"
+  }
+  const marqueeList = [
+  { id: "m1" },
+  { id: "m2" },
+  { id: "m3" },
+  { id: "m4" },
+  { id: "m5" },
+  { id: "m6" },
+];
   const marqueeContent = (
     <div className="flex items-center gap-6 shrink-0">
-      {Array(6)
-        .fill(null)
-        .map((_, i) => (
-          <div key={i} className="flex items-center gap-5 whitespace-nowrap font-bold">
-            <span>Let&apos;s join</span>
-            <div>- 火箭隊培訓營 Rocket -</div>
-            <div>- 共同空間 Co-working space -</div>
-          </div>
-        ))}
+      {marqueeList.map((item) => (
+        <div
+          key={item.id}
+          className="flex items-center gap-5 whitespace-nowrap font-bold"
+        >
+          <span>{marqueeData.a}</span>
+          <div>{marqueeData.b}</div>
+          <div>{marqueeData.c}</div>
+        </div>
+      ))}
     </div>
   );
 

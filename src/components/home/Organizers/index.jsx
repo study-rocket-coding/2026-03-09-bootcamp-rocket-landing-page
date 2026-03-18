@@ -1,4 +1,3 @@
-import React from 'react';
 import { organizersData } from './data';
 import OrganizerCard from './OrganizerCard'
 

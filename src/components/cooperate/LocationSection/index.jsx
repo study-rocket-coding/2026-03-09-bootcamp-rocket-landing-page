@@ -1,4 +1,3 @@
-import React from 'react';
 import LocationMap from './LocationMap';
 import LocationInfo from './LocationInfo';
 import { locationData } from './data';

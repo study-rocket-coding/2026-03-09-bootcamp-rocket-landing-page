@@ -47,4 +47,8 @@ function Badge({
   );
 }
 
+<<<<<<< HEAD
 export { Badge, badgeVariants }
+=======
+export { Badge, badgeVariants }
+>>>>>>> dev

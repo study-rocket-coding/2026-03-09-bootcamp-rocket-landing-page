@@ -1,8 +1,8 @@
 import HeaderMarquee from '../components/common/HeaderMarquee';
-import HomeHero from '../components/home/HomeHero/HomeHero';
-import LocationSection from '../components/cooperate/LocationSection/LocationSection';
-import FieldAndServiceSection from '../components/cooperate/FieldAndServiceSection/FieldAndServiceSection';
-import PricingSection from '../components/cooperate/PricingSection/PricingSection';
+import HomeHero from '../components/home/HomeHero/index';
+import LocationSection from '../components/cooperate/LocationSection';
+import FieldAndServiceSection from '../components/cooperate/FieldAndServiceSection';
+import PricingSection from '../components/cooperate/PricingSection';
 import Footer from '../components/common/Footer';
 
 const App = () => {

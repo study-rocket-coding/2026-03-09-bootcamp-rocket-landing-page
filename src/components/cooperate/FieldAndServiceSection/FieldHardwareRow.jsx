@@ -1,15 +1,17 @@
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 
 const FieldHardwareRow = ({ item, index }) => {
   const isReverse = index % 2 === 1;
+  const dynamicContentClassName = isReverse ? "notebook:flex-row-reverse" : "";
 
   return (
     <Card className="w-full border-none shadow-none bg-transparent">
-      <CardContent className={`p-0 flex flex-col notebook:flex-row ${
-        isReverse ? 'notebook:flex-row-reverse' : ''
-      } items-center gap-4 notebook:gap-10 w-full`}>
-        
+      <CardContent className={cn(
+        "p-0 flex flex-col notebook:flex-row items-center gap-4 notebook:gap-10 w-full",
+        dynamicContentClassName
+      )}>
         {/* 圖片區域 */}
         <div className="w-full notebook:w-[526px] h-auto notebook:h-[388px] aspect-[332/222] notebook:aspect-auto flex-shrink-0">
           <picture>

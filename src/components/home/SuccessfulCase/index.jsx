@@ -1,4 +1,3 @@
-import React from 'react';
 import { row1, row2 } from './data';
 
 const SuccessfulCase = () => {
