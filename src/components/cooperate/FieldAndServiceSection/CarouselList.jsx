@@ -3,9 +3,10 @@ const CarouselList = ({ images, type }) => {
   return (
     <>
       {images.map((img) => {
-        const currentSrc = type === "pc" ? img.lg : img.sm;
-        const CarouselKey = `${currentSrc}-${img.alt}`;
         const isPc = type ==="pc";
+        const currentSrc = isPc ? img.lg : img.sm;
+        const CarouselKey = `${currentSrc}-${img.alt}`;
+        
 
         return (
           <div
