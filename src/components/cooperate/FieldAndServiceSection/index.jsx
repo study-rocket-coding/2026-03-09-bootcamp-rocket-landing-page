@@ -23,8 +23,8 @@ const FieldAndServiceSection = () => {
       <div className="mx-auto max-w-[1076px] mt-19 notebook:mt-[76px] flex flex-col gap-8 notebook:gap-8 pb-20">
         <FieldSectionLabel> 服務 </FieldSectionLabel>
         <div className="grid grid-cols-1 md:grid-cols-2 notebook:grid-cols-3 gap-y-7 notebook:gap-y-12 gap-x-7 place-items-center">
-          {services.map((s) => (
-            <ServiceCard key={s.id} {...s} />
+          {services.map((service) => (
+            <ServiceCard key={service.id} {...service} />
           ))}
         </div>
       </div>

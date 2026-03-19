@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import PricingCard from './PricingCard';
 import PromoBubble from './PromoBubble';
 
@@ -28,13 +29,15 @@ const PricingSection = () => {
         ))}
       </div>
 
-      {/* 底部 Call to Action 按鈕 */}
-      <a
-        href={ctaHref}
-        className="pricing-cta mt-14 notebook:mt-14 max-w-269 w-full h-16 flex items-center justify-center border-2 border-neutral-700 rounded-xl no-underline text-neutral-700 bg-primary-violet-100 text-body1 font-bold"
+      {/* 底部 Call to Action 按鈕 - 使用 Shadcn Button */}
+      <Button
+        asChild
+        className="pricing-cta mt-14 notebook:mt-14 max-w-269 w-full h-16 border-2 border-neutral-700 rounded-xl bg-primary-violet-100 text-neutral-700 text-body1 font-bold hover:bg-primary-violet-300 transition-colors"
       >
-        {ctaText}
-      </a>
+        <a href={ctaHref}>
+          {ctaText}
+        </a>
+      </Button>
     </section>
   );
 };
