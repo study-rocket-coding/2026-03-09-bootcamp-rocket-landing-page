@@ -4,7 +4,7 @@ import CooperatePage from './pages/CooperatePage';
 
 function App() {
   return (
-    <Routes>
+    <Routes basename={import.meta.env.BASE_URL}>
       <Route path="/" element={<Home />} />
       <Route path="/cooperate" element={<CooperatePage />} />
     </Routes>
